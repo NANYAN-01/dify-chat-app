@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>AI 文件对话助手</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(135deg, #e0e7ff, #f5f7fa);
+    }
+
+    #dify-chatbot-bubble-window, .dify-chatbot-bubble-window, iframe {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      z-index: 9999 !important;
+    }
+
+    #dify-chatbot-bubble-button {
+      display: none !important;  /* 隐藏按钮 */
+    }
+  </style>
+</head>
+<body>
+  <script>
+    window.difyChatbotConfig = {
+      token: '1RmSlrPYDbRt9gdF',
+      baseUrl: 'https://udify.app',
+      openImmediately: true,
+      systemVariables: {
+        // user_id: 'your_user_id',
+      },
+      userVariables: {
+        // name: '访客',
+        // avatar_url: 'https://example.com/avatar.png'
+      }
+    }
+  </script>
+  <script
+    src="https://udify.app/embed.min.js"
+    id="1RmSlrPYDbRt9gdF"
+    defer>
+  </script>
+</body>
+</html>
